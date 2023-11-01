@@ -24,3 +24,26 @@ then exit with the 84 error code (0 if there is no error).
 
 > For this project, the only authorized functions are those of the standard libC.
 
+## Idea
+### Searching
+For the searching part, I used Depth-First Search (DFS) to determine if the word exists in the grid.
+
+* Searching steps
+![image](assets/image-5.png)
+
+## Result
+### Build
+![image](assets/image.png)
+
+### Interactive mode
+![image](assets/image-1.png)
+
+
+### Entered word by using `-w` arguments
+![image](assets/image-2.png)
+
+### Entered word by using standard input
+![image](assets/image-3.png)
+
+### Error message
+![image](assets/image-4.png)
