@@ -104,7 +104,7 @@ int main(int argc, char* argv[]) {
                 size = atoi(argv[i]);
 
                 if (size < 1 || size > 10) {
-                    fprintf(stderr, "Invalid grid size. It should be between 1 and 4.\n");
+                    fprintf(stderr, "Invalid grid size. It should be between 1 and 10.\n");
                     return 84;
                 }
             } else {
@@ -163,7 +163,8 @@ int main(int argc, char* argv[]) {
                 if (found) {
                     exit(0);
                 } else {
-                    printf("The word \"%s\" is not in the grid.\n", userInput);
+                    displayGrid(grid, size);
+                    printf("> The word \"%s\" is not in the grid.\n> ", userInput);
                 }
             }
         }
